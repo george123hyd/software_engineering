@@ -22,7 +22,7 @@ public class add{
                 System.out.print(res);
                 break;
         case '3':System.exit(0);
-                  break;
+                  break;       
         default :System.out.print("ueryhgfeigwhg");
       }
       System.out.print("\n");
