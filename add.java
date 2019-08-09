@@ -1,28 +1,33 @@
 import java.util.Scanner;
-public class caladd{
+public class add{
   public static void main(String args[]){
     float a,b,res;
     char choice,ch;
     Scanner scan=new Scanner(System.in);
     do{
-      System.out.println("1.Add two nums\n");
-      System.out.println("2.Mult two nums\n");
-      System.out.println("3.exit\n");
-      System.out.println("enter yr choice\n");
+      System.out.print("1.Add two nums\n");
+      System.out.print("2.Mult two nums\n");
+      System.out.print("3.exit\n");
+      System.out.print("enter yr choice\n");
       choice=scan.next().charAt(0);
       switch(choice){
-        case'1':a=scan.nextFloat();
+        case '1':a=scan.nextFloat();
                 b=scan.nextFloat();
-                System.out.println("res : " a+b);
+                res=a+b;
+                System.out.print(res);
+                break;
+        case '2':a=scan.nextFloat();
+                b=scan.nextFloat();
+                res=a*b;
+                System.out.print(res);
                 break;
         case '3':System.exit(0);
                   break;
-        default :System.out.println("ueryhgfeigwhg");
+        default :System.out.print("ueryhgfeigwhg");
       }
-      System.out.println("\n");
+      System.out.print("\n");
     }
     while(choice!=2);
 
     }
   }
-}
